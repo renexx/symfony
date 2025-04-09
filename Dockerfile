@@ -31,7 +31,13 @@ RUN set -eux; \
 		intl \
 		opcache \
 		zip \
+        pdo_pgsql \
+        pgsql \
 	;
+# Inštalácia Symfony CLI
+RUN curl -sS https://get.symfony.com/cli/installer | bash
+RUN mv /root/.symfony*/bin/symfony /usr/local/bin/symfony
+
 
 # https://getcomposer.org/doc/03-cli.md#composer-allow-superuser
 ENV COMPOSER_ALLOW_SUPERUSER=1

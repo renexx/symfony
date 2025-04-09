@@ -1,0 +1,5 @@
+type RootQuery {
+    me: User
+    projects: [Project!]!
+    project(id:ID!): Project
+}

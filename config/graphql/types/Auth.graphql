@@ -1,0 +1,15 @@
+input SignupInput {
+    login: String!
+    password: String!
+    name: String
+}
+
+input LoginInput {
+    login: String!
+    password: String!
+}
+
+type AuthPayload {
+    token: String!
+    user: User!
+}

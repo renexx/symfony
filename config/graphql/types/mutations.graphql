@@ -1,0 +1,13 @@
+type DeleteProjectResponse {
+    id: ID!
+    success: Boolean!
+}
+
+type RootMutation {
+    signup(input: SignupInput!): AuthPayload!
+    login(input: LoginInput!): AuthPayload!
+    updateUser(input: UpdateUser!): User!
+    createProject(input: CreateProject!): Project!
+    updateProject(id: ID!, input: UpdateProject!): Project!
+    deleteProject(id: ID!): DeleteProjectResponse!
+}

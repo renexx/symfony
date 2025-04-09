@@ -1,0 +1,3 @@
+overblog_graphiql:
+    resource: "@OverblogGraphiQLBundle/Resources/config/routing.xml"
+    prefix: /api/graphql

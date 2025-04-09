@@ -1,0 +1,21 @@
+type Project {
+    id: ID!
+    user: User!
+    name: String!
+    description: String
+    created_at: DateTime!
+    updated_at: DateTime
+}
+
+input CreateProject {
+    name: String!
+    description: String
+}
+
+input UpdateProject {
+    owner_id: ID
+    name: String
+    description: String
+}
+
+scalar DateTime

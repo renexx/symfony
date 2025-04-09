@@ -1,0 +1,13 @@
+type User {
+    id: ID!
+    name: String!
+    login: String!
+    password: String!
+    projects: [Project!]!
+}
+
+input UpdateUser {
+    name: String
+    login: String
+    password: String
+}
